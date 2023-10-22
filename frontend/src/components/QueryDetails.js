@@ -2,17 +2,8 @@ const QueryDetails = ({query}) => {
     return(
         
         <div className="content-details">
-            <div className="content-thumbnail">
-                
-                <a href={content.url}>
-                    <img src={content.thumbnail}/>
-                </a>
-            </div>
-            <div className="content-description">
-                <img src={content.feedIcon}/>
-                <h4>{content.title}</h4>
-                <p>{content.body}</p>
-            </div>
+            <h4>{query.title}</h4>
+            <p>{query.body}</p>
         </div>
     )
 }
